@@ -73,6 +73,30 @@ public class Settings extends PreferenceActivity {
         ActivityInfo a = getPackageManager().resolveActivity(intent, PackageManager.MATCH_DEFAULT_ONLY).activityInfo;
          if (a != null && a.name.equals("com.android.launcher.Launcher") && (a.applicationInfo.flags & ApplicationInfo.FLAG_SYSTEM) != 0 ){
             if ( parent.findPreference(KEY_LAUNCHER) == null){
+                Intent launcherIntent = new Intent();
+                launcherIntent.setClassName("com.android.launcher.Launcher", "com.android.launcher.MyLauncherSettings");
+                mLauncherSettings.setIntent(launcherIntent);
+                parent.addPreference(mLauncherSettings);
+            }
+        } else if (a != null && a.name.equals("org.adw.launcher")){                    //ADW Launcher
+            if ( parent.findPreference(KEY_LAUNCHER) == null){
+                Intent launcherIntent = new Intent();
+                launcherIntent.setClassName("org.adw.launcher", "org.adw.launcher.MyLauncherSettings");
+                mLauncherSettings.setIntent(launcherIntent);
+                parent.addPreference(mLauncherSettings);
+            }
+        } else if (a != null && a.name.equals("org.adwfreak.launcher")){               //ADW Launcher EX
+            if ( parent.findPreference(KEY_LAUNCHER) == null){
+                Intent launcherIntent = new Intent();
+                launcherIntent.setClassName("org.adwfreak.launcher", "org.adwfreak.launcher.MyLauncherSettings");
+                mLauncherSettings.setIntent(launcherIntent);
+                parent.addPreference(mLauncherSettings);
+            }
+        } else if (a != null && a.name.equals("com.fede.launcher")){                     //Launcher Pro
+            if ( parent.findPreference(KEY_LAUNCHER) == null){
+                Intent launcherIntent = new Intent();
+                launcherIntent.setClassName("com.fede.launcher", "com.fede.launcher.MyLauncherSettings");
+                mLauncherSettings.setIntent(launcherIntent);
                 parent.addPreference(mLauncherSettings);
             }
         } else {
