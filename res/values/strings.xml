@@ -2127,7 +2127,7 @@ found in the list of installed applications.</string>
     <!-- App Fuel Gauge strings -->
     <skip/>
 
-    <string name="advanced_power_usage_summary_title">Battery use</string>
+    <string name="advanced_power_usage_title">Battery use</string>
     <string name="advanced_power_usage_summary">What has been using the battery</string>
 
 
