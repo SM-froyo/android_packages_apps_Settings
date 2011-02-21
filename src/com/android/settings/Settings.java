@@ -95,7 +95,7 @@ public class Settings extends PreferenceActivity {
         } else if (a != null && a.name.equals("com.fede.launcher")){                     //Launcher Pro
             if ( parent.findPreference(KEY_LAUNCHER) == null){
                 Intent launcherIntent = new Intent();
-                launcherIntent.setClassName("com.fede.launcher", "com.fede.launcher.MyLauncherSettings");
+                launcherIntent.setClassName("com.fede.launcher", "com.fede.launcher.LauncherPreferencesActivity");
                 mLauncherSettings.setIntent(launcherIntent);
                 parent.addPreference(mLauncherSettings);
             }
