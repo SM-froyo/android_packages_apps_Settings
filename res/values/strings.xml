@@ -1792,6 +1792,8 @@ found in the list of installed applications.</string>
     <string name="app_install_location_title">Preferred install location</string>
     <!-- Manage applications. application installation location summary -->
     <string name="app_install_location_summary">Change the preferred installation location for new applications.</string>
+    <string name="usage_statistics_title">Usage statistics</string>
+    <string name="usage_statistics_summary">Summary of application usage</string>
 
     <!-- Services settings screen, setting option name for the user to go to the screen to view running services -->
     <string name="runningservices_settings_title">Running services</string>
